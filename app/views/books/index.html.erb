@@ -1,0 +1,79 @@
+<%= form_tag "/books/search", method: :get do %>
+  <%= label_tag "search for" %>
+  <%= text_field_tag :info %>
+  <%= submit_tag %>
+<% end %>
+
+<%= link_to "新建", new_book_path %>
+
+<table>
+  <tr>
+    <td>
+      title
+    </td>
+    <td>
+      content
+    </td>
+    <td>
+      weight
+    </td>
+  </tr>
+  <% @book.each do |b| %>
+    <tr>
+      <td><span class="title"><%= b.title %></span></td>
+      <td>
+        <%= b.content %>
+        <% b.id %>
+      </td>
+      <td><%= b.weight %></td>
+      <td>
+        <%= link_to '编辑', edit_book_path(b) %>
+        <%= link_to '删除', book_path(b), method: :delete, data: {confrom: "are you sure?"} %>
+        <%= link_to '详情', book_path(b) %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<script>
+
+    $('.title').click(function (e) {
+        e.preventDefault();
+        var f_td = $(this).text();
+        $(this).text("")
+
+        var handle_tag = '<input type="text" value="' + f_td + '" size=5  class="lister_input"/>';
+        $(this).parent().append(handle_tag);
+        $(".lister_input").focus();
+
+        $('.lister_input').blur(function () {
+            var value = $(this).val();
+            var f_a = $(this).parent().siblings().last()
+            var f_url = f_a.children(":last").attr("href")
+
+            $.ajax({
+                url: f_url + "/updateTitle",
+                data: {
+                    title: value
+                },
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log("success!")
+
+                }
+            })
+
+
+            pre = $(this).siblings().first()
+            $(this).remove()
+            pre.text(value)
+
+
+        })
+
+
+    });
+
+
+</script>
