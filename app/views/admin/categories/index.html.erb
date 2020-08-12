@@ -24,6 +24,10 @@
               <div class="widget-main">
                 <ul class="list-unstyled spaced2">
                   <li>
+                    <h5><%= c.description %></h5>
+                  </li>
+
+                  <li>
                     <i class="ace-icon fa fa-check green"></i>
                     <%= c.description %>
                   </li>
@@ -31,17 +35,26 @@
 
                 <hr/>
                 <div class="price">
-                  更多
+                  更多文章
                   <small>......</small>
                 </div>
               </div>
-
-              <div>
+              <div style="width: auto">
                 <% btn_class = ["warning", "primary", "success", "inverse"] %>
-                <a href="/admin/categories/<%= c.id %>" class="btn btn-block btn-<%= btn_class[index] ? btn_class[index] : btn_class.sample %>">
+                <% btn= btn_class[index] ? btn_class[index] : btn_class.sample %>
+                <a href="/admin/categories/<%= c.id %>" class="btn  btn-<%= btn %>">
                   <i class="ace-icon fa fa-eye bigger-110"></i>
                   <span>探索</span>
                 </a>
+                <a href="/admin/categories/<%= c.id %>/edit" class="btn   btn-<%= btn %>">
+                  <i class="ace-icon fa fa-eye bigger-110"></i>
+                  <span>编辑</span>
+                </a>
+                <a href="/admin/categories/<%= c.id %>" class="btn  btn-<%= btn %>" data-method="delete">
+                  <i class="ace-icon fa fa-eye bigger-110"></i>
+                  <span>删除</span>
+                </a>
+
               </div>
             </div>
           </div>
@@ -52,7 +65,7 @@
 </div><!-- /.row -->
 <hr>
 <div>
-  <%= link_to '新建', new_admin_category_path, class: "btn btn-xlg pull-right" %>
+  <%= link_to '新建', new_admin_category_path, class: "btn btn-xlg btn-info pull-right" %>
 </div><!-- /.page-content -->
 </div>
 

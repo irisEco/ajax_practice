@@ -2,36 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f3aa24d-7060-41ca-bc90-ba0c86e3fbbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin/articles_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/admin/article.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/admin/category.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/author.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_breadcrumbs.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_choose.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_content_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_head.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_navbar_default.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200808141052_create_author.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200808144958_add_author_id_to_books.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200811083307_create_category.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200811084420_create_article.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/four.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/four.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/test.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_editer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200812071058_add_author_to_article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/default.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/default.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/articles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin/article.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin/category.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200811084420_create_article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200811084420_create_article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,9 +57,11 @@
       <recent name="$PROJECT_DIR$/app/views/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/admin/articles" />
+      <recent name="$PROJECT_DIR$/app/models" />
+      <recent name="$PROJECT_DIR$/app/controllers" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
       <recent name="$PROJECT_DIR$/app/views/admin/categories" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: four">
@@ -180,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596700527101</updated>
-      <workItem from="1596700528316" duration="47262000" />
+      <workItem from="1596700528316" duration="63489000" />
     </task>
     <servers />
   </component>
@@ -219,6 +213,10 @@
       <screen x="0" y="23" width="1440" height="845" />
     </state>
     <state x="712" y="184" width="598" height="522" key="find.popup/0.23.1440.845@0.23.1440.845" timestamp="1597114929428" />
+    <state x="380" y="189" width="670" height="676" key="search.everywhere.popup" timestamp="1597222002670">
+      <screen x="0" y="23" width="1440" height="842" />
+    </state>
+    <state x="380" y="189" width="670" height="676" key="search.everywhere.popup/0.23.1440.842@0.23.1440.842" timestamp="1597222002670" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/four@Development__four.rcov" NAME="Development: four Coverage Results" MODIFIED="1596764384627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="four" />

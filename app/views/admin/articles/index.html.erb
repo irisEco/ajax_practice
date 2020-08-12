@@ -1,0 +1,84 @@
+ <!-- /. NAV SIDE  -->
+  <div id="page-wrapper" >
+    <div id="page-inner">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="page-header">
+            Article <small>list</small>
+          </h1>
+        </div>
+      </div>
+      <!-- /. ROW  -->
+      <div class="row">
+        <div class="col-lg-offset-2 col-md-8">
+          <!--   Basic Table  -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              所有文章
+            </div>
+            <div class="panel-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>标题</th>
+                    <th>作者</th>
+                    <th>内容</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+              <% @article.each_with_index  do |a,index| %>
+                  <tr>
+                    <td><%= index+1 %></td>
+                    <td><%= a.title %></td>
+                    <td><%= a.author %></td>
+                    <td><%= a.content %></td>
+                    <td>
+                      <%=link_to "编辑",edit_admin_article_path(a) %>
+                      <%=link_to "查看",admin_article_path(a) %>
+                      <%=link_to "删除",admin_article_path(a), method: :delete %>
+                    </td>
+                  </tr>
+                  <% end %>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-offset-9">
+              <%= link_to '新建', new_admin_article_path, class: "btn btn-xlg pull-right" %>
+            </div>
+          </div>
+          <!-- End  Basic Table  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /. PAGE INNER  -->
+</div>
+<!-- /. PAGE WRAPPER  -->
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="assets/js/jquery.metisMenu.js"></script>
+<!-- DATA TABLE SCRIPTS -->
+<script src="assets/js/dataTables/jquery.dataTables.js"></script>
+<script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
+</script>
+<!-- Custom Js -->
+<script src="assets/js/custom-scripts.js"></script>
+
+
+</body>
+</html>

@@ -7,7 +7,7 @@
           <div class="widget-header widget-header-flat">
             <h4 class="widget-title smaller">
               <i class="ace-icon fa fa-quote-left smaller-80"></i>
-              <%= @categories.title %>
+              <%= @article.title %>
             </h4>
           </div>
 
@@ -18,25 +18,16 @@
                 <div class="col-xs-12">
                   <blockquote>
                     <p class="lighter line-height-125">
-                      <%= @categories.description %>
+                      <%= @article.content %>
                     </p>
 
                     <small>
-                      Everything about this
+                      <%=@article.author %>
                       <cite title="Source Title"></cite>
                     </small>
                   </blockquote>
                   <hr>
-                  <h5>
-                    文章列表
-                    <cite title="Source Title"></cite>
-                  </h5>
                 </div>
-                <ol>
-                  <%@article.each do |a| %>
-                    <li class="text-muted"><%=link_to  "#{a.title}",admin_article_path(a) %></li>
-                  <% end %>
-                </ol>
                 </table>
               </div>
             </div>

@@ -1,26 +1,44 @@
 class Admin::CategoriesController < ApplicationController
 
   def index
-    @categories = Admin::Category.all
+    @categories = Category.all
   end
 
   def new
-    @categories = Admin::Category.new
+    @categories = Category.new
   end
 
   def create
-    @categories = Admin::Category.create(categories_params)
+    @categories = Category.create(categories_params)
     @categories.save
 
     redirect_to admin_categories_path
   end
 
+  def edit
+    @categories = Category.find(params[:id])
+  end
+
+  def update
+    @categories = Category.update(categories_params)
+
+    redirect_to admin_categories_path
+  end
+
+  def destroy
+    @categories = Category.find(params[:id])
+    @categories.destroy
+
+    redirect_to admin_categories_path
+  end
+
   def show
-    @categories = Admin::Category.find(params[:id])
+    @categories = Category.find(params[:id])
+    @article = @categories.articles
   end
 
   def categories_params
-    params.require(:admin_category).permit(:title,:description)
+    params.require(:category).permit(:title,:description)
 
   end
 
