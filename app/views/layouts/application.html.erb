@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Four</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Four</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= render "layouts/head" %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body class="no-skin">
+<%= render "layouts/navbar_default" %>
+<div class="main-container ace-save-state" id="main-container">
+  <script type="text/javascript">
+      try {
+          ace.settings.loadState('main-container')
+      } catch (e) {
+      }
+  </script>
+
+  <div id="sidebar" class="sidebar responsive  ace-save-state">
+    <script type="text/javascript">
+        try {
+            ace.settings.loadState('sidebar')
+        } catch (e) {
+        }
+    </script>
+
+    <%= render "layouts/sidebar" %>
+
+  </div>
+
+  <div class="main-content">
+    <div class="main-content-inner">
+      <%= render "layouts/breadcrumbs" %>
+      <div class="page-content">
+        <%= render "layouts/choose" %>
+        <%= yield %>
+      </div>
+    </div>
+  </div><!-- /.main-content -->
+  <%= render "layouts/content_footer" %>
+
+</div>
+</body>
+<%= render "layouts/footer" %>
 </html>
+
+
+

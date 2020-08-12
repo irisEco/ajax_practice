@@ -26,11 +26,11 @@ class BooksController<ApplicationController
     redirect_to books_path
   end
 
-  def updateTitle
+  def update_title
     @book = Book.find(params[:id])
     @book.update({title:params[:title]})
 
-    redirect_to books_path
+    render :json => {status: "ok"}
     end
 
   def destroy
