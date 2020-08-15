@@ -5,7 +5,7 @@
         <%= f.label "title", class: "col-sm-3 control-label no-padding-right", for: "form-field-1" %><br>
         <div class="row">
           <div class="col-sm-9">
-            <%= f.text_field  :title, id: "form-field-1", class: "col-xs-10 col-sm-5 col-lg-12", placeholder: "文章名" %>
+            <%= f.text_field :title, id: "form-field-1", class: "col-xs-10 col-sm-5 col-lg-12", placeholder: "文章名" %>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <%= f.label "category", class: "col-sm-3 control-label no-padding-right", for: "form-field-2" %><br>
         <div class="row">
           <div class="col-sm-9">
-            <%= f.select :category_id,Category.pluck(:title,:id), id: "form-field-3", class: "col-xs-10 col-sm-5 col-lg-12", placeholder: "作者" %>
+            <%= f.select :category_id, Category.pluck(:title, :id), id: "form-field-3", class: "col-xs-10 col-sm-5 col-lg-12", placeholder: "作者" %>
           </div>
         </div>
       </div>
@@ -33,10 +33,10 @@
         <div class="row">
           <div class="col-sm-9">
             <%#= f.text_area :content, id: "form-field-4", class: "col-xs-10 col-sm-5 col-lg-12", placeholder: "内容" %>
-            <%= render  "layouts/editer"  do %>
-              <%= f.text_area :content, class: "wysiwyg-editor",id:"editor1", placeholder: "内容",size:"80%" %>
+            <%= render "layouts/editer" do %>
+              <%= f.text_area :content, class: "wysiwyg-editor", id: "editor1", placeholder: "内容", size: "80%" %>
 
-<!--                <textarea class="wysiwyg-editor" id="editor1" placeholder="内容" name="article[content]" style="width: 99%"></textarea>-->
+              <!--                <textarea class="wysiwyg-editor" id="editor1" placeholder="内容" name="article[content]" style="width: 99%"></textarea>-->
 
             <% end %>
           </div>

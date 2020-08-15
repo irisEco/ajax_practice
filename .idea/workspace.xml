@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f3aa24d-7060-41ca-bc90-ba0c86e3fbbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/articles/test.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/categories/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_editer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20200812071058_add_author_to_article.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/users/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/login.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200814054955_create_user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200814070309_create_user_credit.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200814071322_add_user_credit_id_to_user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200814094240_add_uuid_to_user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/four.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/four.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/admin/article.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/admin/category.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/categories/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/categories/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/articles/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/articles/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20200811084420_create_article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20200811084420_create_article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596700527101</updated>
-      <workItem from="1596700528316" duration="63489000" />
+      <workItem from="1596700528316" duration="81468000" />
     </task>
     <servers />
   </component>

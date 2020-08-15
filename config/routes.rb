@@ -12,6 +12,11 @@ Rails.application.routes.draw do
 
   namespace :admin do
      resources :categories
+     resources  :users do
+       collection do
+         post "login"
+       end
+     end
      resources :articles do
        collection do
          get "test"

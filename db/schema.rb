@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_12_071058) do
+ActiveRecord::Schema.define(version: 2020_08_14_094240) do
 
   create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
@@ -41,6 +41,27 @@ ActiveRecord::Schema.define(version: 2020_08_12_071058) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_credits", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "description"
+    t.integer "credit"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.string "pass"
+    t.string "phone"
+    t.integer "credits"
+    t.string "email"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_credit_id"
+    t.string "ancestry"
+    t.string "uuid"
+    t.index ["ancestry"], name: "index_users_on_ancestry"
   end
 
 end

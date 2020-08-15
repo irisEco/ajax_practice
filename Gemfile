@@ -4,6 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 gem 'pry'
 gem  'pry-rails'
+#Ancestry is a gem that allows the records of a Ruby on Rails ActiveRecord model to be organised as a tree structure (or hierarchy).
+gem 'ancestry'
+gem 'uuid'
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
