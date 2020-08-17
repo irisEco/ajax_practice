@@ -2,11 +2,8 @@ class Admin::UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    #查找邀请的6名新用户
     @child_user = @user.subtree.order(:id).limit(6)
-
-    puts '------------------------------'
-    puts @child_user
-    puts '------------------------------'
 
   end
 
@@ -28,9 +25,6 @@ class Admin::UsersController < ApplicationController
       #如果是邀请注册的老用户存在
       if @user.present?
         @child_user = User.create! :name => params[:user][:name], :pass => params[:user][:pass], :email => params[:user][:email], :uuid => UUID.new.generate, :parent => @user
-        puts '---------@user.children--------'
-        puts @user.children
-        puts '-----------------'
       else
         #如果邀请注册的老用户不存在
         flash[:notice] = "邀请码时效!"
@@ -50,9 +44,6 @@ class Admin::UsersController < ApplicationController
     @user = User.where({name: params[:user][:name], pass: params[:user][:pass]})
 
     if @user.present?
-      puts '--------------'
-      puts @user.ids
-      puts '--------------'
       redirect_to admin_user_path(id: @user.ids)
     else
       flash[:notice] = 'Invalid email/password combination' # 不完全正确

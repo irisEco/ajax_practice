@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9f3aa24d-7060-41ca-bc90-ba0c86e3fbbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_breadcrumbs.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_breadcrumbs.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_head.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_head.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar_default.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar_default.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/login.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/login.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596700527101</updated>
-      <workItem from="1596700528316" duration="96508000" />
+      <workItem from="1596700528316" duration="99034000" />
     </task>
     <servers />
   </component>
@@ -197,9 +200,10 @@
       <screen x="0" y="23" width="1440" height="845" />
     </state>
     <state width="788" height="220" key="GridCell.Tab.0.right/0.23.1440.845@0.23.1440.845" timestamp="1596765500493" />
-    <state x="712" y="184" width="598" height="522" key="find.popup" timestamp="1597114929428">
-      <screen x="0" y="23" width="1440" height="845" />
+    <state x="712" y="183" width="598" height="522" key="find.popup" timestamp="1597674008497">
+      <screen x="0" y="23" width="1440" height="842" />
     </state>
+    <state x="712" y="183" width="598" height="522" key="find.popup/0.23.1440.842@0.23.1440.842" timestamp="1597674008497" />
     <state x="712" y="184" width="598" height="522" key="find.popup/0.23.1440.845@0.23.1440.845" timestamp="1597114929428" />
     <state x="380" y="189" width="670" height="676" key="search.everywhere.popup" timestamp="1597222002670">
       <screen x="0" y="23" width="1440" height="842" />
