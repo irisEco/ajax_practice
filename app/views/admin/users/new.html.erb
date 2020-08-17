@@ -59,8 +59,8 @@
                   <h4 class="header blue lighter bigger">
                     <i class="ace-icon fa fa-coffee green"></i>
                     <% if flash[:notice] %>
-                    <div id="notice"><%= flash[:notice] %></div>
-                      <% else %>
+                      <div id="notice"><%= flash[:notice] %></div>
+                    <% else %>
                       Please Enter Your Information
                     <% end %>
                   </h4>
@@ -68,21 +68,21 @@
                   <div class="space-6">
                   </div>
 
-                  <%=form_for @user,url:{action:"login"} do |f| %>
+                  <%= form_for @user, url: {action: "login"} do |f| %>
                     <fieldset>
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input type="text" class="form-control" placeholder="Username"/>
                               <%#=f.text_field :name,class:"form-control", placeholder:"Username" %>
-															<i class="ace-icon fa fa-user"></i>
+                              <i class="ace-icon fa fa-user"></i>
 														</span>
                       </label>
 
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<input type="password" class="form-control" placeholder="Password"/>
-                              <%=f.text_field :pass,class:"form-control", placeholder:"Password" %>
-															<i class="ace-icon fa fa-lock"></i>
+                              <%= f.text_field :pass, class: "form-control", placeholder: "Password" %>
+                              <i class="ace-icon fa fa-lock"></i>
 														</span>
                       </label>
 
@@ -124,7 +124,7 @@
                     </a>
                   </div>
                 </div>
-<!--               /.widget-main -->
+                <!--               /.widget-main -->
 
                 <div class="toolbar clearfix">
                   <div>
@@ -142,9 +142,9 @@
                   </div>
                 </div>
               </div>
-<!--              /.widget-body -->
+              <!--              /.widget-body -->
             </div>
-<!--            /.login-box -->
+            <!--            /.login-box -->
 
             <div id="forgot-box" class="forgot-box widget-box no-border">
               <div class="widget-body">
@@ -199,37 +199,43 @@
                   <p> Enter your details to begin: </p>
                   <!--用户注册-->
 
-                    <%= form_for @user, url: {action: "create"} do |f| %>
+                  <%= form_for @user, url: {action: "create"} do |f| %>
                     <fieldset>
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-                              <%= f.text_field :email,type:"email",class:"form-control",placeholder:"Email" %>
-                              <%= f.text_field :uuid,type:"hidden",class:"form-control",value:@user.uuid %>
-															<i class="ace-icon fa fa-envelope"></i>
+                              <%= f.text_field :email, type: "email", class: "form-control", placeholder: "Email" %>
+                             <%#uuid = UUID.new %>
+                              <%#uuid = uuid.generate %>
+                              <%#= f.hidden_field :old_uuid, :value => @uuid %>
+                              <%= f.hidden_field :uuid, :value => @uuid %>
+                              <%#= f.hidden_field :ancestry %>
+
+
+                              <i class="ace-icon fa fa-envelope"></i>
 														</span>
                       </label>
 
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<!--<input type="text" class="form-control" placeholder="Username"/>-->
-                              <%= f.text_field :name,class:"form-control",placeholder:"Username"%>
-															<i class="ace-icon fa fa-user"></i>
+                              <%= f.text_field :name, class: "form-control", placeholder: "Username" %>
+                              <i class="ace-icon fa fa-user"></i>
 														</span>
                       </label>
 
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 															<!--<input type="password" class="form-control" placeholder="Password"/>-->
-                              <%= f.password_field :pass,class:"form-control",placeholder:"Password" %>
-															<i class="ace-icon fa fa-lock"></i>
+                              <%= f.password_field :pass, class: "form-control", placeholder: "Password" %>
+                              <i class="ace-icon fa fa-lock"></i>
 														</span>
                       </label>
 
                       <label class="block clearfix">
 														<span class="block input-icon input-icon-right">
 <!--															<input type="password" class="form-control" placeholder="Repeat password"/>-->
-                              <%= f.password_field :pass,class:"form-control",placeholder:"Repeat password" %>
-															<i class="ace-icon fa fa-retweet"></i>
+                              <%= f.password_field :pass, class: "form-control", placeholder: "Repeat password" %>
+                              <i class="ace-icon fa fa-retweet"></i>
 														</span>
                       </label>
 
@@ -248,10 +254,10 @@
                           <i class="ace-icon fa fa-refresh"></i>
                           <span class="bigger-110">Reset</span>
                         </button>
-                            <%= f.submit "Register",class:"width-65 pull-right btn btn-sm btn-success " %>
+                        <%= f.submit "Register", class: "width-65 pull-right btn btn-sm btn-success " %>
                       </div>
                     </fieldset>
-                    <% end %>
+                  <% end %>
                 </div>
 
                 <div class="toolbar center">
